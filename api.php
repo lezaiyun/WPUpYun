@@ -13,7 +13,7 @@ class UpYunApi
 	public function __construct($options) {
 		// 初始化签权对象
 		$serviceConfig = new Config($options['serviceName'], $options['operatorName'], $options['operatorPwd']);
-		$serviceConfig->setUploadType('BLOCK_PARALLEL');  // 使用并行式断点续传上传文件
+		// $serviceConfig->setUploadType('BLOCK_PARALLEL');  // (实测有问题)使用并行式断点续传上传文件
 		$this->client = new Upyun($serviceConfig);
 	}
 
