@@ -17,8 +17,7 @@ class UpYunApi
 		$this->client = new Upyun($serviceConfig);
 	}
 
-	public function Upload($key, $localFilePath) {
-		$file = fopen($localFilePath, 'r');
+	public function Upload($key, $file) {
 		$this->client->write($key, $file);  // 支持异步，但因为涉及异步回调地址，暂不使用异步。
 	}
 

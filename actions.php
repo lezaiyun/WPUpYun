@@ -72,7 +72,7 @@ function wpupyun_file_upload($key, $file_local_path, $no_local_file = False) {
     $upyun = new UpYunApi($wpupyun_options);
 	### 上传文件流
 	  # 由于增加了独立文件名钩子对对象存储中同名文件的判断，避免同名文件的存在，因此这里直接覆盖上传。
-    $upyun->Upload( $key, $file_local_path );
+    $upyun->Upload( $key, fopen($file_local_path, 'r') );
     // 如果上传成功，且不再本地保存，在此删除本地文件
     if ($no_local_file) {
         wpupyun_delete_local_file($file_local_path);
@@ -103,11 +103,6 @@ function wpupyun_delete_remote_attachment($post_id) {
 			$attachment_thumbs_key = dirname($meta['file']) . '/' . $val['file'];
 			$deleteObjects[] = array( 'Key' => $attachment_thumbs_key, );
 		}
-	}
-
-	if ( !empty( $deleteObjects ) ) {
-		// 执行删除远程对象
-
 	}
 
     if ( !empty( $deleteObjects ) ) {
