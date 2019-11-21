@@ -4,8 +4,8 @@ Contributors: laobuluo
 Donate link: https://www.laobuluo.com/donate/
 Tags:WordPress对象存储,WordPress加速,WordPress 又拍云存储, 又拍云WordPress,又拍云对象存储
 Requires at least: 4.5.0
-Tested up to: 5.2.2
-Stable tag: 1.0
+Tested up to: 5.3
+Stable tag: 1.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -52,6 +52,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * 2. 解决图片重复上传和超时问题
 * 3. 解决Apache默认环境出现超时HTTP上传错误
 * 4. 解决同步本地和又拍云存储图片错误问题
+
+= 1.1 =
+* 1. 解决WordPress升级5.3之后图片处理方式问题
+* 2. 调试兼容WP5.3和老版本WP
 
 
 == Upgrade Notice ==

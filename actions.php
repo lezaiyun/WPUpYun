@@ -125,6 +125,9 @@ function wpupyun_delete_remote_attachment($post_id) {
  * 官方的钩子文档上写了可以添加 $attachment_id 参数，但实际测试过程中部分wp接收到不存在的参数时会报错，上传失败，返回报错为“HTTP错误”
  */
 function wpupyun_upload_and_thumbs( $metadata ) {
+// 	$file = plugin_dir_path(__FILE__) . 'fwlogs.txt';
+// 	fwriteLogs($file, get_bloginfo('version'));
+	
 	$wpupyun_options = get_option('wpupyun_options');
 	$wp_uploads = wp_upload_dir();  # 获取上传路径
 
