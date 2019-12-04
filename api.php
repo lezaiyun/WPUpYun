@@ -21,7 +21,9 @@ class UpYunApi
 	}
 
 	public function Delete($keys) {
-		$this->client->delete($keys, True);  // 删除成功返回 true，否则 false
+		foreach ($keys as $key) {
+			$this->client->delete( $key, true );  // 删除成功返回 true，否则 false
+		}
 	}
 
 	public function hasExist($key) {
