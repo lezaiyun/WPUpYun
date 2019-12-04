@@ -93,27 +93,25 @@ function wpupyun_delete_remote_attachment($post_id) {
 
 	if (isset($meta['file'])) {
 		$attachment_key = $meta['file'];
-		array_push($deleteObjects, array( 'Key' => $attachment_key, ));
+		array_push($deleteObjects, $attachment_key);
 	} else {
 		$file = get_attached_file( $post_id );
 		$attached_key = str_replace( wp_get_upload_dir()['basedir'] . '/', '', $file );  # 不能以/开头
-		$deleteObjects[] = array( 'Key' => $attached_key, );
+		$deleteObjects[] = $attached_key;
 	}
 
 	if (isset($meta['sizes']) && count($meta['sizes']) > 0) {
 		foreach ($meta['sizes'] as $val) {
 			$attachment_thumbs_key = dirname($meta['file']) . '/' . $val['file'];
-			$deleteObjects[] = array( 'Key' => $attachment_thumbs_key, );
+			$deleteObjects[] = $attachment_thumbs_key;
 		}
 	}
 
     if ( !empty( $deleteObjects ) ) {
         // 执行删除远程对象
         $upyun = new UpYunApi(get_option('wpupyun_options'));
-        foreach ($deleteObjects as $key){
-            //删除文件, 每个数组1000个元素
-            $upyun->Delete($key);
-        }
+        //删除文件, 每个数组1000个元素
+        $upyun->Delete($deleteObjects);
     }
 }
 
