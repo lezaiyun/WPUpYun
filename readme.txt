@@ -1,11 +1,11 @@
-=== WPUPYUN ===
+=== WPUPYUN又拍云对象存储 ===
 
 Contributors: laobuluo
 Donate link: https://www.laobuluo.com/donate/
 Tags:WordPress对象存储,WordPress加速,WordPress 又拍云存储, 又拍云WordPress,又拍云对象存储
 Requires at least: 4.5.0
-Tested up to: 5.3
-Stable tag: 1.2
+Tested up to: 5.4
+Stable tag: 1.3.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -60,6 +60,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 = 1.2 =
 * 1. 解决删除媒体库不同步删除问题
 * 2. 重新调优部分代码
+
+= 1.3.1 =
+* 1. 兼容WP5.4版本
+* 2. 优化部分前端，准备重构代码
 
 
 == Upgrade Notice ==

@@ -214,7 +214,7 @@ function wpupyun_add_setting_page() {
 	if (!function_exists('wpupyun_setting_page')) {
 		require_once 'setting_page.php';
 	}
-	add_menu_page('WP又拍云设置', 'WP又拍云设置', 'manage_options', __FILE__, 'wpupyun_setting_page');
+	Add_options_page('WP又拍云设置', '又拍云存储设置', 'manage_options', __FILE__, 'wpupyun_setting_page');
 }
 
 // 在插件列表页添加设置按钮
