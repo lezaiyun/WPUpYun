@@ -1,31 +1,39 @@
-=== WPUPYUN又拍云对象存储 ===
+=== WPUPYUN又拍云云存储 ===
 
 Contributors: laobuluo
-Donate link: https://www.laobuluo.com/donate/
+Donate link: https://www.cnwper.com/donate/
 Tags:WordPress对象存储,WordPress加速,WordPress 又拍云存储, 又拍云WordPress,又拍云对象存储
 Requires at least: 4.5.0
 Tested up to: 5.4.1
-Stable tag: 1.3.2
+Stable tag: 2.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-<strong>WordPress 又拍云对象存储插件（简称:WPUPYUN），基于又拍云对象存储与WordPress实现静态资源到又拍云对象存储中。提高网站项目的访问速度，以及静态资源的安全存储功能。站长交流QQ群： <a href="https://jq.qq.com/?_wv=1027&k=5gBE7Pt" target="_blank"> <font color="red">594467847</font></a></strong>
+WordPress又拍云云存储插件（简称:WPUPYUN），基于又拍云云存储与WordPress实现静态资源到又拍云对象存储中。提高网站项目的访问速度，以及静态资源的安全存储功能。站长交流QQ群： <a href="https://jq.qq.com/?_wv=1027&k=5IpUNWK" target="_blank"> <font color="red">1012423279</font></a>
 
-<strong>主要功能：</strong>
 
-* 1、下载和激活【WPUPYUN】插件后，配置又拍云存储信息。
-* 2、可以选择只存储到又拍云对象存储空间、也可以本地网站也同时备份。
-* 3、选择又拍云对象存储必须自定义域名，不支持免费域名绑定，且域名需要备案过。
-* 4、WPUPYUN插件更多详细介绍和安装：<a href="https://www.laobuluo.com/2620.html" target="_blank" >https://www.laobuluo.com/2620.html</a>
+## 插件特点
 
-<strong>支持网站平台：</strong>
+1. 新增支持又拍云图片编辑 设置水印、编辑图片、压缩WEBP等
+2. 支持已有图片编辑功能
+3. 支持自定义域名设置 可设置多级目录
+4. 支持一键替换静态本地化至对象存储远程URL
+5. 支持一键禁止缩略图
+6. 支持自定义任意对象存储目录，一个存储桶可以多网站
+7. 支持自动文件重命名
+8. 支持本地和对象存储分离和同步
+9. 优化重构加速上传
 
-* 1. 老蒋部落 <a href="https://www.itbulu.com" target="_blank" >https://www.itbulu.com</a>
-* 2. 老部落 <a href="https://www.laobuluo.com" target="_blank" >https://www.laobuluo.com</a>
-* 3. 推荐文章：<a href="https://www.laobuluo.com/2113.html" target="_blank">新人建站常用的虚拟主机/云服务器 常用主机商选择建议</a>
+WPCOS插件安装方法：[https://www.cnwper.com/702.html](https://www.cnwper.com/702.html)
+
+## 网站支持
+
+[WordPress笔记](https://www.cnwper.com/ "WordPress笔记")
+
+欢迎加入插件和站长QQ交流群：1012423279
 
 == Installation ==
 
@@ -47,26 +55,35 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
 
-= 1.0 =
-* 1. 完成又拍云对象存储自动同步WordPress图片静态文件插件；
-* 2. 解决图片重复上传和超时问题
-* 3. 解决Apache默认环境出现超时HTTP上传错误
-* 4. 解决同步本地和又拍云存储图片错误问题
+= 2.1 =
+* 提高编辑图片效率
+* 新增又拍云图片编辑功能，可压缩图片和水印自定义适配官方文档
+* 新增支持自定义任意远程目录，可多站点使用一个云存储空间
 
-= 1.1 =
-* 1. 解决WordPress升级5.3之后图片处理方式问题
-* 2. 调试兼容WP5.3和老版本WP
+= 2.0 =
+* 重构插件代码 提高优化性能
+* 新增随机重命名、禁止缩略图
+
+= 1.3.1 =
+* 兼容WP5.4.1版本测试
+
+= 1.3.1 =
+* 兼容WP5.4版本
+* 优化部分前端，准备重构代码
 
 = 1.2 =
-* 1. 解决删除媒体库不同步删除问题
-* 2. 重新调优部分代码
+* 解决删除媒体库不同步删除问题
+* 重新调优部分代码
 
-= 1.3.1 =
-* 1. 兼容WP5.4版本
-* 2. 优化部分前端，准备重构代码
+= 1.1 =
+* 解决WordPress升级5.3之后图片处理方式问题
+* 调试兼容WP5.3和老版本WP
 
-= 1.3.1 =
-* 1. 兼容WP5.4.1版本测试
+= 1.0 =
+* 完成又拍云对象存储自动同步WordPress图片静态文件插件；
+* 解决图片重复上传和超时问题
+* 解决Apache默认环境出现超时HTTP上传错误
+* 解决同步本地和又拍云存储图片错误问题
 
 == Upgrade Notice ==
 * 
